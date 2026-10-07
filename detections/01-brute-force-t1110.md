@@ -21,6 +21,7 @@ index=windows EventCode=4625
 
 ## Alert settings
 Scheduled every 5 minutes, trigger once when results > 0, throttled 30 minutes per source.
+**Tuning:** Narrowed the search window from a wide range to the last 15 minutes after the alert kept re-firing on old failed logons. Triggered alerts expire after 24 hours.
 
 ## L1 triage steps
 1. Check the source address: internal or external? Look it up if external.
