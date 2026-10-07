@@ -21,10 +21,15 @@ index=windows EventCode=4625
 
 ## Alert settings
 Scheduled every 5 minutes, trigger once when results > 0, throttled 30 minutes per source.
-**Tuning:** Narrowed the search window from a wide range to the last 15 minutes after the alert kept re-firing on old failed logons. Triggered alerts expire after 24 hours.
 
 ## L1 triage steps
 1. Check the source address: internal or external? Look it up if external.
 2. Check the account: real user, service account or nonexistent?
 3. Search for a successful logon (4624) from the same source afterwards.
 4. Escalate to L2 if a success followed or the source is suspicious; close as false positive if it's a user mistyping.
+## Result
+I failed a Windows logon 5+ times on my lab host. The alert triggered within the 5-minute schedule and appeared in Triggered Alerts (High).
+
+![Alert trigger history](../brute-force-alert.png)
+
+**Tuning:** The alert initially re-fired on old failed logons. I narrowed the search window to the last 15 minutes and set triggered alerts to expire after 24 hours.
