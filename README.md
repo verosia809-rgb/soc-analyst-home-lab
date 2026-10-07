@@ -9,6 +9,8 @@ Splunk Enterprise lab built to practice L1 SOC skills: log collection, detection
 ## Detections
 | # | Detection  | MITRE ATT&CK  | Severity |
 |---|-----------|--------------|----------|
-| 1 | [Brute force: multiple failed logons](detections/01-brute-force-t1110.md) | T1110 | High |
+| 1 | [Brute force: multiple failed logons](detections/01-brute-force-t1110.md) | T1110 | High | 
+
+
 ## Skills practiced
 SPL, Windows event log analysis, alert tuning, MITRE ATT&CK mapping, forwarder troubleshooting.
