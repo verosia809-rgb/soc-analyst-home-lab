@@ -40,4 +40,4 @@ Scheduled every 5 minutes, searching the last 15 minutes, trigger once when resu
 My test command was captured as Event 4104 and the alert triggered.
 
 ![Captured script block](../powershell-event.png)
-![Alert trigger history](../powershell-alert.png)
+![Alert trigger history](../powershell-alert.png) 
